@@ -37,15 +37,15 @@
                             <a class="nav-link" href="#products">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
                     </form>
                 </div>
             </div>
@@ -103,9 +103,9 @@
 
     <!-- Main  -->
     <main>
-        <section id="services">
+        <section id="services" class="container">
             <h2 class="text-center my-5 fs-2">Our Services</h2>
-            <div class="row container align-items-center mx-auto g-5">
+            <div class="row align-items-center mx-auto g-5">
                 <!-- Left  -->
                 <div class="col-lg-6">
                     <img src="assets/images/services.png" class="img-fluid" alt="">
@@ -152,15 +152,103 @@
             </div>
         </section>
 
-        <section>
+        <section id="products" class="container my-5">
             <h2 id="products" class="text-center my-5 fs-2">Products</h2>
+
+            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 text-center">
+                <div class="col">
+                    <div class="card h-100 py-3">
+                        <img src="./assets/images/product-icon1.png" class="card-img-top w-25 mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.
+                            </p>
+                            <button class="btn btn-primary rounded-pill px-3" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 py-3">
+                        <img src="./assets/images/product-icon2.png" class="card-img-top w-25 mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                This card has supporting text below as a natural lead-in to additional
+                                content.
+                            </p>
+                            <button class="btn btn-primary rounded-pill px-3" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 py-3">
+                        <img src="./assets/images/product-icon3.png" class="card-img-top w-25 mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.
+                            </p>
+                            <button class="btn btn-primary rounded-pill px-3" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">See More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container my-5">
+            <h2 class="text-center">Contact Us</h2>
+            <div class="bg-light p-5 w-75 mx-auto my-5">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Button is clicked
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <!-- Footer  -->
-    <footer>
-
+    <footer class="bg-primary p-5 text-center">
+        <p class="text-white">&copy Md.Musfiqur Rahaman | 2022</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
